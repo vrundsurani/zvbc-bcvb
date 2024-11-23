@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> BlackJam.2 </title>
+    <link rel="icon" type="image/jpg" href="jj.png">
+    <!-- Google fonts. -->
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'/>
+    <!-- Use font awesome icons. -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Use firebase app and database. -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <!-- The CSS and JS file must be declared after the things above-->
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="script.js"></script>
+
+  </head>
+  <body>
+
+    <style>
+      @media screen and (max-width: 768px) {
+
+body {
+  font-size: 10px; 
+}
+
+#title_container {
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+#title {
+  font-size: 28px; 
+}
+
+
+#join_container {
+  margin-top: 10px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#join_inner_container {
+  width: 100%;
+}
+
+#join_input_container {
+  height: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#join_input {
+  width: 90%; 
+  height: 35px;
+  text-align: center;
+}
+
+#join_button_container {
+  height: auto;
+  margin-top: 10px;
+}
+
+#join_button {
+  width: 90%; 
+  height: 35px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+#chat_container {
+  height: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#chat_inner_container {
+  width: 100%;
+}
+
+#chat_content_container {
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-y: auto;
+  height: 70%;
+}
+
+#chat_input_container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chat_input {
+  width: 75%;
+  height: 35px;
+}
+
+#chat_input_send {
+  width: 20%; 
+  font-size: 14px;
+  height: 35px;
+}
+
+#chat_logout {
+  font-size: 8px; 
+}
+
+
+.message_user, .message_content {
+  font-size: 8px; 
+}
+
+
+.loader {
+  width: 20px;
+  height: 20px;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+#title {
+  font-size: 24px;
+}
+
+#join_input {
+  height: 30px; 
+}
+
+#join_button, #chat_input_send {
+  height: 30px; 
+}
+
+.message_user, .message_content {
+  font-size: 7px; 
+}
+
+#chat_input {
+  height: 30px; 
+}
+
+#chat_input_send {
+  height: 30px; 
+}
+
+#chat_container {
+  height: auto;
+}
+
+#chat_inner_container {
+  padding: 5px;
+}
+
+
+#chat_content_container, #chat_input_container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+}
+
+    </style>
+    <script>
+      if (window.innerWidth <= 768) {
+          document.body.innerHTML = '<h1>This website is only accessible on desktop.</h1>';
+          // You can also redirect users to another page
+          // window.location.href = "https://example.com/desktop-only";
+      }
+  </script>
+  
+  </body>
+</html>
